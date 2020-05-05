@@ -1,0 +1,17 @@
+{
+  "main.css": "/craig-handley/static/css/main.f7125c40.chunk.css",
+  "main.js": "/craig-handley/static/js/main.75ef6fc5.chunk.js",
+  "main.js.map": "/craig-handley/static/js/main.75ef6fc5.chunk.js.map",
+  "runtime~main.js": "/craig-handley/static/js/runtime~main.aeb6eef3.js",
+  "runtime~main.js.map": "/craig-handley/static/js/runtime~main.aeb6eef3.js.map",
+  "vendors~main.js": "/craig-handley/static/js/vendors~main.cf654020.chunk.js",
+  "vendors~main.js.map": "/craig-handley/static/js/vendors~main.cf654020.chunk.js.map",
+  "./service-worker.js": "/craig-handley/./service-worker.js",
+  "favicon.ico": "/craig-handley/favicon.ico",
+  "index.html": "/craig-handley/index.html",
+  "logo.svg": "/craig-handley/logo.svg",
+  "manifest.json": "/craig-handley/manifest.json",
+  "precache-manifest.a5909a55aa4e015efc2a694b3d983fbe.js": "/craig-handley/precache-manifest.a5909a55aa4e015efc2a694b3d983fbe.js",
+  "static/media/home.jpg": "/craig-handley/static/media/home.d4b6a229.jpg",
+  "static/media/resume.jpg": "/craig-handley/static/media/resume.35824288.jpg"
+}
