@@ -88,6 +88,7 @@ view model =
                         , p [] [ text "I have experience in agile methodologies, continuous integration and am comfortable reporting up and down any organisation." ]
                         , p [] [ text "My versatility and aptitude are such that I can comfortably work directly with clients gathering requirements and rapidly developing solutions or work on my own designing and developing well structured applications." ]
                         , p [] [ text "Outside of work I enjoy sporting activities such as Football and Badminton, I also keep Marine fish and lots of my spare time is taken up by breeding and raising Clownfish and Seahorses." ]
+                        , p [ class "link", onClick (SmoothScroll "_CONTACT_ME_") ] [ text "Contact Me" ]
                         ]
                     ]
 
@@ -107,7 +108,7 @@ view model =
                             , p [ class "link", onClick (SmoothScroll "_RESUME_") ] [ text "View Full Resume" ]
                             ]
                         ]
-                    , div [ class "spotlight" ]
+                    , div [ id "_CONTACT_ME_", class "spotlight" ]
                         [ div [ class "image flush" ]
                             [ img [ src model.flags.images.code ] []
                             ]
