@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/craig-handley/precache-manifest.3d2a4901c9cf409188d66c4d840746a0.js"
+  "/craig-handley/precache-manifest.92e935534ef7dfc07468a8f5d9002936.js"
 );
 
 workbox.core.skipWaiting();
