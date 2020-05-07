@@ -4,7 +4,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/craig-handley/favicon.ico"
   },
   {
-    "revision": "3f4128ddd4386f76cfe85b6c769039e3",
+    "revision": "8b3b057014f284d30d07971ff10717c3",
     "url": "/craig-handley/index.html"
   },
   {
@@ -16,12 +16,12 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/craig-handley/manifest.json"
   },
   {
-    "revision": "c2e393b14ba1edbd7bc5",
-    "url": "/craig-handley/static/css/main.78051725.chunk.css"
+    "revision": "534eb8afaa68e93845d6",
+    "url": "/craig-handley/static/css/main.1fb758a9.chunk.css"
   },
   {
-    "revision": "c2e393b14ba1edbd7bc5",
-    "url": "/craig-handley/static/js/main.c2e393b1.chunk.js"
+    "revision": "534eb8afaa68e93845d6",
+    "url": "/craig-handley/static/js/main.534eb8af.chunk.js"
   },
   {
     "revision": "aeb6eef3e495f6cfe046",
