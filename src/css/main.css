@@ -2883,20 +2883,12 @@ body:after {
   padding: 0;
 }
 
-#header>.logo a {
-  font-size: 4rem;
-  font-weight: 700;
-  color: #FFF;
-  text-decoration: none;
-  line-height: 1rem;
-}
-
 #header>.logo p {
 	font-size: 4rem;
 	font-weight: 700;
 	color: #FFF;
-	text-decoration: none;
-	line-height: 2rem;
+  text-decoration: none;
+  line-height: 1em;
   }
   
 #header>.logo span {
@@ -2904,6 +2896,7 @@ body:after {
   font-size: 1rem;
   display: block;
   color: rgba(255, 255, 255, 0.65);
+  margin-top: -1em;
 }
 
 @media screen and (max-width: 1280px) {
@@ -3105,4 +3098,14 @@ body:after {
 
 .extra-top-margin {
 	margin-top: 2em;
+}
+
+.link {
+  color: #54a354;
+	text-decoration: underline;
+  cursor: pointer;
+}
+
+.link:hover {
+	text-decoration: none;
 }

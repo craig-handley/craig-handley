@@ -1,6 +1,4 @@
-// import './css/orig.main.css';
 import './css/main.css';
-import './css/font-awesome.min.css';
 import { Elm } from './Main.elm';
 import main from './img/main.jpg';
 import code from './img/code.jpg';

@@ -3,6 +3,9 @@ module Main exposing (..)
 import Browser
 import Html exposing (..)
 import Html.Attributes exposing (..)
+import Html.Events exposing (onClick)
+import SmoothScroll exposing (scrollTo)
+import Task exposing (Task)
 
 
 
@@ -34,11 +37,17 @@ init flags =
 
 type Msg
     = NoOp
+    | SmoothScroll String
 
 
 update : Msg -> Model -> ( Model, Cmd Msg )
 update msg model =
-    ( model, Cmd.none )
+    case msg of
+        NoOp ->
+            ( model, Cmd.none )
+
+        SmoothScroll id ->
+            ( model, Task.attempt (always NoOp) (scrollTo id) )
 
 
 
@@ -62,8 +71,8 @@ view model =
         {--Main--}
         , section [ id "main" ]
             [ div [ class "inner" ]
-                {--One--}
-                [ section [ id "one", class "wrapper style1" ]
+                {--Top--}
+                [ section [ id "top", class "wrapper style1" ]
                     [ div [ class "image fit flush" ]
                         [ img [ src model.flags.images.main ] []
                         ]
@@ -82,8 +91,8 @@ view model =
                         ]
                     ]
 
-                {--Two--}
-                , section [ id "two", class "wrapper" ]
+                {--Skillset/Contact--}
+                , section [ id "skillset", class "wrapper" ]
                     [ div [ class "spotlight alt" ]
                         [ div [ class "image flush" ]
                             [ img [ src model.flags.images.keyboard ] []
@@ -95,6 +104,7 @@ view model =
                             , p [] [ text "Elm" ]
                             , p [] [ text "Amazon Web Services" ]
                             , p [] [ text "Technical Leadership" ]
+                            , p [ class "link", onClick (SmoothScroll "_RESUME_") ] [ text "View Full Resume" ]
                             ]
                         ]
                     , div [ class "spotlight" ]
@@ -152,8 +162,8 @@ view model =
                 --             ]
                 --         ]
                 --     ]
-                , {--Four--}
-                  section [ id "four", class "wrapper style1" ]
+                , {--Resume--}
+                  section [ id "_RESUME_", class "wrapper style1" ]
                     [ header [ class "special" ]
                         [ h2 [] [ text "My Resume" ]
 
