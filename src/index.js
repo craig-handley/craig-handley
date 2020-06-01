@@ -3,6 +3,7 @@ import { Elm } from './Main.elm';
 import main from './img/main.jpg';
 import code from './img/code.jpg';
 import keyboard from './img/keyboard.jpg';
+import cv from './img/cv.pdf';
 
 import * as serviceWorker from './serviceWorker';
 
@@ -18,6 +19,7 @@ function generateFlags() {
       main,
       code,
       keyboard,
+      cv,
     }
   };
 }

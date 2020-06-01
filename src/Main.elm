@@ -17,6 +17,7 @@ type alias Flags =
         { main : String
         , code : String
         , keyboard : String
+        , cv : String
         }
     }
 
@@ -299,7 +300,7 @@ view model =
                             , p [] [ text "Elm" ]
                             , p [] [ text "Amazon Web Services" ]
                             , p [] [ text "Technical Leadership" ]
-                            , p [ class "link", onClick (SmoothScroll "_RESUME_") ] [ text "View Full Resume" ]
+                            , p [ class "link", onClick (SmoothScroll "_RESUME_") ] [ text "View Resume" ]
                             ]
                         ]
                     , div [ class "spotlight" ]
@@ -365,7 +366,10 @@ view model =
                         -- , p [] [ text "vehicula urna sed justo bibendum" ]
                         ]
                     , div [ class "content resume" ]
-                        [ h3 [] [ text "Work Experience" ]
+                        [ p [ class "link" ]
+                            [ a [ href model.flags.images.cv, download "Craig_Handley_CV.pdf" ] [ text "Download Resume" ]
+                            ]
+                        , h3 [] [ text "Work Experience" ]
                         , h4 [] [ text "SENIOR SOFTWARE ENGINEER / ENGINEERING TEAM LEAD" ]
                         , h5 [] [ text "Click Travel Ltd, 2013 - present" ]
                         , p [] [ text "I currently work as a full stack senior software engineer, designing and developing services that form part of a framework for enterprise applications backed by Amazon Web Services using domain driven design. Bounded contexts are realised as micro services which are integrated using an event-driven architecture and expose a RESTful API. Services are created using Java and Node with a front end written in AngularJS and Elm." ]
